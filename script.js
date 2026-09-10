@@ -1,21 +1,19 @@
-/* =========================================
-   SCROLL BUTTONS
-========================================= */
+/* =========================
+   SCROLL SUAVE
+========================= */
 
 document.querySelectorAll("[data-scroll]").forEach(button => {
 
     button.addEventListener("click", () => {
 
         const target = document.querySelector(
-            button.dataset.scroll
+            button.getAttribute("data-scroll")
         );
 
         if (target) {
-
             target.scrollIntoView({
                 behavior: "smooth"
             });
-
         }
 
     });
@@ -23,100 +21,149 @@ document.querySelectorAll("[data-scroll]").forEach(button => {
 });
 
 
-/* =========================================
-   REVEAL ANIMATION
-========================================= */
+/* =========================
+   ANIMACIONES
+========================= */
 
 const revealElements =
     document.querySelectorAll(".reveal");
 
+const observer =
+    new IntersectionObserver(
+        entries => {
 
-const observer = new IntersectionObserver(
+            entries.forEach(entry => {
 
-    entries => {
+                if (entry.isIntersecting) {
 
-        entries.forEach(entry => {
+                    entry.target.classList.add("visible");
 
-            if (entry.isIntersecting) {
+                    observer.unobserve(entry.target);
 
-                entry.target.classList.add("visible");
+                }
 
-                observer.unobserve(entry.target);
+            });
 
-            }
-
-        });
-
-    },
-
-    {
-        threshold: 0.15
-    }
-
-);
+        },
+        {
+            threshold: 0.15
+        }
+    );
 
 
 revealElements.forEach(element => {
-
     observer.observe(element);
-
 });
 
 
-/* =========================================
+/* =========================
    GOOGLE MAPS
-========================================= */
+========================= */
 
-const locationButton =
-    document.getElementById("locationButton");
-
-
-locationButton.addEventListener("click", () => {
-
-    const address =
-        "Parroquia de Nuestra Señora de Juquila";
-
-    const url =
-        "https://www.google.com/maps/search/?api=1&query="
-        + encodeURIComponent(address);
-
-    window.open(url, "_blank");
-
-});
+// CEREMONIA
+const churchAddress =
+    "Parroquia de Nuestra Señora de Juquila, Puebla, Mexico";
 
 
-/* =========================================
+// RECEPCIÓN
+const receptionAddress =
+    "Privada Xaltonac 423, Colonia Indios Verdes, Puebla, Mexico";
+
+
+/* =========================
+   BOTÓN CEREMONIA
+========================= */
+
+const churchButton =
+    document.getElementById("churchLocation");
+
+if (churchButton) {
+
+    churchButton.addEventListener("click", () => {
+
+        const url =
+            "https://www.google.com/maps/search/?api=1&query=" +
+            encodeURIComponent(churchAddress);
+
+        window.open(url, "_blank");
+
+    });
+
+}
+
+
+/* =========================
+   BOTÓN RECEPCIÓN
+========================= */
+
+const receptionButton =
+    document.getElementById("receptionLocation");
+
+if (receptionButton) {
+
+    receptionButton.addEventListener("click", () => {
+
+        const url =
+            "https://www.google.com/maps/search/?api=1&query=" +
+            encodeURIComponent(receptionAddress);
+
+        window.open(url, "_blank");
+
+    });
+
+}
+
+
+/* =========================
+   SEGUNDO BOTÓN RECEPCIÓN
+========================= */
+
+const receptionButtonBottom =
+    document.getElementById(
+        "receptionLocationBottom"
+    );
+
+if (receptionButtonBottom) {
+
+    receptionButtonBottom.addEventListener("click", () => {
+
+        const url =
+            "https://www.google.com/maps/search/?api=1&query=" +
+            encodeURIComponent(receptionAddress);
+
+        window.open(url, "_blank");
+
+    });
+
+}
+
+
+/* =========================
    WHATSAPP
-========================================= */
+========================= */
+
+// Sustituir por el número real
+const phone =
+    "521XXXXXXXXXX";
 
 const whatsappButton =
     document.getElementById("whatsappButton");
 
+if (whatsappButton) {
 
-whatsappButton.addEventListener("click", () => {
+    whatsappButton.addEventListener("click", () => {
 
-    /*
-        CAMBIAR POR EL NÚMERO REAL
-        Ejemplo:
+        const message =
+            "Hola, quiero confirmar mi asistencia a la celebración de la Primera Comunión de Alan Uriel y el Bautizo de Emmanuel Yassiel.";
 
-        522221234567
-    */
+        const url =
+            "https://wa.me/" +
+            phone +
+            "?text=" +
+            encodeURIComponent(message);
 
-    const phone =
-        "521XXXXXXXXXX";
+        window.open(url, "_blank");
 
+    });
 
-    const message =
-        "Hola, quiero confirmar mi asistencia a la Primera Comunión de Alan Uriel.";
-
-
-    const url =
-        "https://wa.me/"
-        + phone
-        + "?text="
-        + encodeURIComponent(message);
-
-
-    window.open(url, "_blank");
-
-});
+}

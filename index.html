@@ -1,119 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Primera Comunión | Alan Uriel</title>
+    <title>Primera Comunión y Bautizo | Alan Uriel & Emmanuel Yassiel</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- =========================================
+    <!-- =========================
          HERO
-    ========================================== -->
-
+    ========================== -->
     <header class="hero">
 
-        <div class="hero-glow glow-one"></div>
-        <div class="hero-glow glow-two"></div>
+        <div class="hero-background"></div>
 
-        <div class="religious-symbol">
+        <div class="hero-content reveal">
 
             <!-- Cruz -->
-            <svg viewBox="0 0 100 130" aria-hidden="true">
-                <path d="M42 10h16v38h25v15H58v45H42V63H17V48h25z" />
-            </svg>
+            <div class="religious-symbol">
+                <svg viewBox="0 0 100 120" aria-hidden="true">
+                    <path d="M50 5 V115"></path>
+                    <path d="M20 35 H80"></path>
+                </svg>
+            </div>
+
+            <p class="eyebrow">UNA CELEBRACIÓN MUY ESPECIAL</p>
+
+            <h1>
+                Mi Primera Comunión
+                <span>y Bautizo</span>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="hero-intro">
+                Con mucha alegría queremos compartir
+                este momento tan especial.
+            </p>
+
+            <!-- Niño 1 -->
+            <div class="child-block">
+                <h2 class="child-name">Alan Uriel</h2>
+                <p class="child-sacrament">
+                    Primera Comunión
+                </p>
+            </div>
+
+            <div class="ampersand">&amp;</div>
+
+            <!-- Niño 2 -->
+            <div class="child-block">
+                <h2 class="child-name">Emmanuel Yassiel</h2>
+                <p class="child-sacrament">
+                    Bautizo
+                </p>
+            </div>
+
+            <blockquote>
+                “Dejad que los niños se acerquen a mí”
+                <cite>Mateo 19:14</cite>
+            </blockquote>
+
+            <button class="scroll-button" data-scroll="#invitacion">
+                <span>Descubrir invitación</span>
+                <span class="arrow">↓</span>
+            </button>
 
         </div>
-
-        <p class="eyebrow">MI PRIMERA</p>
-
-        <h1>Comunión</h1>
-
-        <div class="gold-line"></div>
-
-        <p class="intro-small">
-            Con mucha alegría
-        </p>
-
-        <h2 class="child-name">
-            Alan Uriel
-        </h2>
-
-        <p class="hero-quote">
-            “Dejad que los niños se acerquen a mí”
-        </p>
-
-        <span class="quote-reference">
-            Mateo 19:14
-        </span>
-
-        <button class="scroll-button" data-scroll="#invitacion">
-            Descubrir invitación
-            <span>↓</span>
-        </button>
-
     </header>
 
 
     <main>
 
-        <!-- =========================================
+        <!-- =========================
              INVITACIÓN
-        ========================================== -->
-
+        ========================== -->
         <section id="invitacion" class="section invitation-section">
 
+            <div class="section-number">01</div>
+
             <div class="section-heading reveal">
-
-                <span class="section-number">
-                    01
-                </span>
-
-                <p class="section-label">
-                    Un día especial
-                </p>
+                <p class="eyebrow">CON MUCHO CARIÑO</p>
 
                 <h2>
                     Queremos compartir
                     <span>este momento contigo</span>
                 </h2>
-
             </div>
-
 
             <div class="glass-card invitation-card reveal">
 
-                <div class="card-decoration">
-                    ✦
-                </div>
-
-                <p>
+                <p class="card-intro">
                     Nos gustaría que seas parte de esta celebración
-                    eucarística de nuestro hijo
+                    tan especial en nuestras vidas.
                 </p>
 
-                <h3>
-                    Alan Uriel
-                </h3>
+                <div class="children-names">
 
-                <div class="mini-gold-line"></div>
+                    <div class="mini-child">
+                        <span class="mini-symbol">✝</span>
 
-                <p class="card-description">
-                    Será un día lleno de amor, fe y alegría,
-                    y nos encantará compartirlo contigo.
+                        <h3>Alan Uriel</h3>
+
+                        <p>
+                            Primera Comunión
+                        </p>
+                    </div>
+
+                    <div class="mini-divider">
+                        &amp;
+                    </div>
+
+                    <div class="mini-child">
+                        <span class="mini-symbol water-symbol">◊</span>
+
+                        <h3>Emmanuel Yassiel</h3>
+
+                        <p>
+                            Bautizo
+                        </p>
+                    </div>
+
+                </div>
+
+                <p class="card-text">
+                    Será un día lleno de alegría, fe y momentos
+                    que queremos compartir con las personas
+                    que forman parte de nuestras vidas.
                 </p>
 
             </div>
@@ -121,168 +144,103 @@
         </section>
 
 
-        <!-- =========================================
-             FECHA Y LUGAR
-        ========================================== -->
-
+        <!-- =========================
+             DETALLES
+        ========================== -->
         <section class="section details-section">
 
+            <div class="section-number">02</div>
+
             <div class="section-heading reveal">
-
-                <span class="section-number">
-                    02
-                </span>
-
-                <p class="section-label">
-                    Reserva la fecha
-                </p>
+                <p class="eyebrow">RESERVA LA FECHA</p>
 
                 <h2>
                     El momento
                     <span>ha llegado</span>
                 </h2>
-
             </div>
 
 
+            <!-- Fecha -->
             <div class="details-grid">
 
-                <!-- FECHA -->
-
-                <article class="glass-card detail-card reveal">
+                <article class="detail-card glass-card reveal">
 
                     <div class="detail-icon">
-
-                        <!-- Calendario -->
                         <svg viewBox="0 0 100 100">
-
-                            <rect x="18" y="22"
-                                  width="64"
-                                  height="60"
-                                  rx="5"/>
-
-                            <line x1="18"
-                                  y1="40"
-                                  x2="82"
-                                  y2="40"/>
-
-                            <line x1="32"
-                                  y1="14"
-                                  x2="32"
-                                  y2="30"/>
-
-                            <line x1="68"
-                                  y1="14"
-                                  x2="68"
-                                  y2="30"/>
-
+                            <rect x="20" y="25" width="60" height="55" rx="5"></rect>
+                            <line x1="30" y1="15" x2="30" y2="35"></line>
+                            <line x1="70" y1="15" x2="70" y2="35"></line>
+                            <line x1="20" y1="42" x2="80" y2="42"></line>
                         </svg>
-
                     </div>
 
-                    <p class="detail-label">
+                    <span class="detail-label">
                         FECHA
-                    </p>
+                    </span>
 
                     <h3>
-                        3
+                        5 de diciembre
                     </h3>
 
-                    <p class="detail-main">
-                        de diciembre
+                    <p>
+                        Guarda este día en tu calendario.
                     </p>
 
                 </article>
 
 
-                <!-- IGLESIA -->
-
-                <article class="glass-card detail-card reveal">
+                <!-- Ceremonia -->
+                <article class="detail-card glass-card reveal">
 
                     <div class="detail-icon">
-
-                        <!-- Iglesia -->
                         <svg viewBox="0 0 100 100">
-
-                            <path d="M20 82h60"/>
-
-                            <path d="M28 82V45L50 30l22 15v37"/>
-
-                            <path d="M50 30V16"/>
-
-                            <path d="M43 23h14"/>
-
-                            <rect x="44"
-                                  y="62"
-                                  width="12"
-                                  height="20"/>
-
-                            <rect x="34"
-                                  y="49"
-                                  width="10"
-                                  height="12"/>
-
-                            <rect x="56"
-                                  y="49"
-                                  width="10"
-                                  height="12"/>
-
+                            <path d="M20 85 H80"></path>
+                            <path d="M30 85 V45 H70 V85"></path>
+                            <path d="M25 45 L50 20 L75 45"></path>
+                            <path d="M45 85 V60 H55 V85"></path>
+                            <path d="M50 15 V35"></path>
+                            <path d="M42 25 H58"></path>
                         </svg>
-
                     </div>
 
-                    <p class="detail-label">
-                        CEREMONIA
-                    </p>
+                    <span class="detail-label">
+                        CEREMONIA RELIGIOSA
+                    </span>
 
-                    <h3 class="church-title">
-                        Parroquia
-                    </h3>
-
-                    <p class="detail-main">
+                    <h3>
+                        Parroquia de<br>
                         Nuestra Señora de Juquila
+                    </h3>
+
+                    <p>
+                        Primera Comunión y Bautizo
                     </p>
 
                 </article>
 
 
-                <!-- HORA -->
-
-                <article class="glass-card detail-card reveal">
+                <!-- Hora -->
+                <article class="detail-card glass-card reveal">
 
                     <div class="detail-icon">
-
-                        <!-- Reloj -->
                         <svg viewBox="0 0 100 100">
-
-                            <circle cx="50"
-                                    cy="50"
-                                    r="30"/>
-
-                            <line x1="50"
-                                  y1="50"
-                                  x2="50"
-                                  y2="32"/>
-
-                            <line x1="50"
-                                  y1="50"
-                                  x2="64"
-                                  y2="58"/>
-
+                            <circle cx="50" cy="50" r="32"></circle>
+                            <line x1="50" y1="50" x2="50" y2="30"></line>
+                            <line x1="50" y1="50" x2="66" y2="60"></line>
                         </svg>
-
                     </div>
 
-                    <p class="detail-label">
+                    <span class="detail-label">
                         HORA
-                    </p>
+                    </span>
 
-                    <h3 class="pending">
-                        Por definir
+                    <h3>
+                        Próximamente
                     </h3>
 
-                    <p class="detail-main">
-                        Próximamente
+                    <p>
+                        Te compartiremos el horario.
                     </p>
 
                 </article>
@@ -292,78 +250,117 @@
         </section>
 
 
-        <!-- =========================================
-             FOTO / RECUERDO
-        ========================================== -->
+        <!-- =========================
+     RECEPCIÓN PREMIUM
+========================== -->
+<section class="section reception-section">
 
-        <section class="section photo-section">
+    <div class="section-number">03</div>
+
+    <div class="premium-reception reveal">
+
+        <div class="reception-ornament top">
+            <span></span>
+            <strong>✦</strong>
+            <span></span>
+        </div>
+
+        <p class="eyebrow">
+            DESPUÉS DE LA CEREMONIA
+        </p>
+
+        <h2>
+            Tenemos algo más
+            <span>que celebrar</span>
+        </h2>
+
+        <p class="reception-intro">
+            Queremos continuar este día tan especial
+            compartiendo contigo una celebración llena
+            de alegría, cariño y buenos momentos.
+        </p>
+
+
+        <div class="reception-main">
+
+            <div class="reception-icon-premium">
+                <span>✦</span>
+            </div>
+
+            <p class="reception-label">
+                RECEPCIÓN
+            </p>
+
+            <h3>
+                Privada Xaltonac 423
+            </h3>
+
+            <div class="reception-divider"></div>
+
+            <p class="reception-address">
+                Colonia Indios Verdes<br>
+                Puebla
+            </p>
+
+            <p class="reception-note">
+                Después de la ceremonia religiosa agradecemos su asistencia en el domicilio.
+            </p>
+
+            <button
+                class="premium-location-button"
+                id="receptionLocation"
+            >
+                <span class="map-pin">⌖</span>
+                <span>Ver ubicación</span>
+            </button>
+
+        </div>
+
+
+        <div class="reception-ornament bottom">
+            <span></span>
+            <strong>✦</strong>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- =========================
+             FOTOS
+        ========================== -->
+        <section class="section photos-section">
+
+            <div class="section-number">04</div>
 
             <div class="section-heading reveal">
 
-                <span class="section-number">
-                    03
-                </span>
-
-                <p class="section-label">
-                    Un recuerdo especial
+                <p class="eyebrow">
+                    UN DÍA PARA RECORDAR
                 </p>
 
                 <h2>
-                    Alan Uriel
-                    <span>en este día</span>
+                    Alan Uriel &amp;
+                    <span>Emmanuel Yassiel</span>
                 </h2>
 
             </div>
 
 
-            <div class="photo-layout reveal">
+            <div class="photo-grid reveal">
 
                 <div class="photo-placeholder photo-large">
-
-                    <div>
-
-                        <span class="camera-icon">
-                            ✦
-                        </span>
-
-                        <p>
-                            Fotografía de Alan
-                        </p>
-
-                        <small>
-                            Espacio reservado
-                        </small>
-
-                    </div>
-
+                    <span>Fotografía</span>
                 </div>
 
+                <div class="photo-placeholder">
+                    <span>Fotografía</span>
+                </div>
 
-                <div class="photo-side">
-
-                    <div class="photo-placeholder photo-small">
-
-                        <div>
-                            <span>✦</span>
-                            <p>
-                                Foto
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="photo-placeholder photo-small">
-
-                        <div>
-                            <span>✦</span>
-                            <p>
-                                Foto
-                            </p>
-                        </div>
-
-                    </div>
-
+                <div class="photo-placeholder">
+                    <span>Fotografía</span>
                 </div>
 
             </div>
@@ -371,103 +368,123 @@
         </section>
 
 
-        <!-- =========================================
-             UBICACIÓN
-        ========================================== -->
+        <!-- =========================
+             UBICACIONES
+        ========================== -->
+        <section class="section locations-section">
 
-        <section class="section location-section">
+            <div class="section-number">05</div>
 
             <div class="section-heading reveal">
 
-                <span class="section-number">
-                    04
-                </span>
-
-                <p class="section-label">
-                    Nos encontramos aquí
+                <p class="eyebrow">
+                    ¿CÓMO LLEGAR?
                 </p>
 
                 <h2>
-                    Parroquia de
-                    <span>Nuestra Señora de Juquila</span>
+                    Nuestras
+                    <span>ubicaciones</span>
                 </h2>
 
             </div>
 
 
-            <div class="glass-card location-card reveal">
+            <div class="locations-grid">
 
-                <div class="location-illustration">
+                <!-- CEREMONIA -->
+                <div class="location-card glass-card reveal">
 
-                    <!-- Pin -->
-                    <svg viewBox="0 0 100 120">
+                    <div class="location-icon">
+                        ✝
+                    </div>
 
-                        <path
-                            d="M50 108
-                               C50 108 78 78 78 50
-                               C78 34 65 21 50 21
-                               C35 21 22 34 22 50
-                               C22 78 50 108 50 108Z"/>
+                    <span class="detail-label">
+                        CEREMONIA
+                    </span>
 
-                        <circle cx="50"
-                                cy="50"
-                                r="9"/>
+                    <h3>
+                        Parroquia de Nuestra Señora de Juquila
+                    </h3>
 
-                    </svg>
+                    <p>
+                        Primera Comunión y Bautizo
+                    </p>
+
+                    <button
+                        class="location-button"
+                        id="churchLocation"
+                    >
+                        <span class="button-icon">⌖</span>
+                        Ver ubicación
+                    </button>
 
                 </div>
 
-                <p>
-                    Parroquia de Nuestra Señora de Juquila
-                </p>
 
-                <button
-                    class="primary-button"
-                    id="locationButton">
+                <!-- RECEPCIÓN -->
+                <div class="location-card glass-card reveal">
 
-                    Ver ubicación
+                    <div class="location-icon reception-icon">
+                        ✦
+                    </div>
 
-                </button>
+                    <span class="detail-label">
+                        RECEPCIÓN
+                    </span>
+
+                    <h3>
+                        Privada Xaltonac 423
+                    </h3>
+
+                    <p>
+                        Colonia Indios Verdes,
+                        Puebla
+                    </p>
+
+                    <button
+                        class="location-button"
+                        id="receptionLocationBottom"
+                    >
+                        <span class="button-icon">⌖</span>
+                        Ver ubicación
+                    </button>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================================
+        <!-- =========================
              CONFIRMACIÓN
-        ========================================== -->
-
+        ========================== -->
         <section class="section confirmation-section">
 
-            <div class="confirmation-wrapper reveal">
+            <div class="confirmation-card glass-card reveal">
 
                 <div class="confirmation-symbol">
                     ✦
                 </div>
 
-                <p class="section-label">
-                    Confirma tu asistencia
+                <p class="eyebrow">
+                    TU PRESENCIA ES MUY IMPORTANTE
                 </p>
 
                 <h2>
-                    Será un placer
-                    <span>contar contigo</span>
+                    ¿Nos acompañas?
                 </h2>
 
-                <p class="confirmation-text">
-                    Ayúdanos confirmando tu asistencia
-                    para este día tan especial.
+                <p>
+                    Confirma tu asistencia por WhatsApp.
+                    Nos dará mucha alegría contar contigo.
                 </p>
 
                 <button
                     class="whatsapp-button"
-                    id="whatsappButton">
-
-                    <span>💬</span>
-
-                    Confirmar por WhatsApp
-
+                    id="whatsappButton"
+                >
+                    Confirmar asistencia
                 </button>
 
             </div>
@@ -477,13 +494,12 @@
     </main>
 
 
-    <!-- =========================================
+    <!-- =========================
          FOOTER
-    ========================================== -->
-
+    ========================== -->
     <footer>
 
-        <div class="footer-cross">
+        <div class="footer-symbol">
             ✝
         </div>
 
@@ -492,10 +508,12 @@
         </p>
 
         <h3>
-            Familia de Alan Uriel
+            Familia
         </h3>
 
-        <div class="footer-line"></div>
+        <p class="footer-names">
+            Alan Uriel &amp; Emmanuel Yassiel
+        </p>
 
         <small>
             Invitación diseñada por Eventos Únicos
@@ -507,5 +525,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>
